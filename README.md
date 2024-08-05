@@ -1,4 +1,4 @@
-#效果预览
+# 效果预览
 https://riceabow.github.io/GC-display-vue/
 
 # Vue 3 + Vite
