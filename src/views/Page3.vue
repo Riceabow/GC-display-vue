@@ -14,7 +14,7 @@
         
         <div class="p3r2m p3fade">
           <ColorPicker v-model="colorElected" size="medium" modebar="none" style="position: absolute;;left: 0;top: 0;" />
-          <!-- <p style="position: absolute;left: 50px;top: 0;color: #f19600;">拾色器</p> -->
+          <p :style="txtRgba" id="rgbaTxt">{{ rgbaTxt }}</p>
           <div class="mstuffs" id="p3m1" ref="outer"></div>
           <div class="mstuffs" id="p3m2" ref="inner"></div>
           <div class="mstuffs" id="p3m3"></div>
@@ -57,6 +57,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";  
 import ColorPicker from '@mcistudio/vue-colorpicker'
 import '@mcistudio/vue-colorpicker/dist/style.css'
+import { color } from 'echarts';
 
 export default{
   name:'Page3',
@@ -68,10 +69,18 @@ export default{
     return {  
       colorElected: {  
         color: { r: 246, g: 185, b: 79, a: 1 } // 初始颜色值  
-      }  
+      }
     };  
   },
   computed:{
+    txtRgba(){
+      return{ color: this.rgbaTxt}
+    },
+    rgbaTxt(){
+      const { r, g, b, a } = this.colorElected.color;
+      const rgba = `rgba(${r},${g},${b},${a})`;
+      return rgba
+    },
     bkcolor(){  
       const { r, g, b, a } = this.colorElected.color;  
       // 注意：这里我们简化了渐变，只设置了一个颜色和透明度变化点  
@@ -96,7 +105,8 @@ export default{
           trigger: "#page3",  
           start: "top top",  
           // markers:true,
-          end: "top top", 
+          end: "+=300", 
+          pin:true,
           // scrub: true, // 允许用户通过滚动回溯动画  
         }  
       }) 

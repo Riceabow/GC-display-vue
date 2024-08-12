@@ -1,0 +1,149 @@
+#page5{
+    position:relative;
+    overflow-y: hidden;
+}
+#bkdiv5{
+    background-color: #fdf6ec;
+
+
+}
+#p5c1{
+    flex: 1;
+    background: linear-gradient(to right,#e79f0d 0%,#fdf6ec );
+
+    /* background-color: blue; */
+}
+#p5c2{
+    flex: 3;
+    /* background-color: violet; */
+}
+.p5head{
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    height: 10vh;
+    width: 100%;
+    background:
+    url('/images/P5/1.png') top left no-repeat;
+    background-size: contain;
+}
+#p5c1head{
+    position: relative;
+    top: 14vh;
+    left: 100px;
+    height: 4vh;
+    width: 100%;
+    background:
+    url('/images/P5/2.png') top left no-repeat;
+    background-size: contain;
+}
+
+#p5c2head{
+    position: relative;
+    top: 14vh;
+    left: 100px;
+    height: 4vh;
+    width: 100%;
+    background:
+    url('/images/P5/3.png') top left no-repeat;
+    background-size: contain;
+}
+#tools{
+    position: relative;
+    top: 15vh;
+    left: 100px;
+    height: 80vh;
+    width: 100%;
+    background:
+    url('/images/P5/4.png') top left no-repeat;
+    background-size: contain;
+}
+#noodle{
+    position: absolute;
+    top: 5vh;
+    bottom: 5vh;
+    right: 10vw;
+    height: 80vh;
+    width: 55vw;
+}
+.illustrations{
+    position: absolute;
+    width: 15vw;
+    height: 30vh;
+    top: 5vh;
+    right: 100px;
+    background-color: aqua;
+    cursor: pointer;
+}
+#illu1{
+top: 25vh;
+left: 35vw;
+background:
+url('/images/P5/5.png') top left no-repeat;
+background-size: contain;
+}
+#illu2{
+    top: 14vh;
+    left: 50vw;
+    background:
+    url('/images/P5/6.png') top left no-repeat;
+    background-size: contain;
+}
+#illu3{
+    top: 3vh;
+    left: 65vw;
+    background:
+    url('/images/P5/7.png') top left no-repeat;
+    background-size: contain;
+}
+#illu4{
+    top: 6vh;
+    right: 6vw;
+    z-index: 10;
+    background:
+    url('/images/P5/8.png') top left no-repeat;
+    background-size: contain;
+}
+#illu5{
+    top: 35vh;
+    right: 20vw;
+    background:
+    url('/images/P5/9.png') top left no-repeat;
+    background-size: contain;
+}
+#illu6{
+    top: 45vh;
+    right: 32vw;
+    background:
+    url('/images/P5/10.png') top left no-repeat;
+    background-size: contain;
+}
+#illu7{
+    top: 57vh;
+    right: 46vw;
+    background:
+    url('/images/P5/11.png') top left no-repeat;
+    background-size: contain;
+}
+#illu8{
+    top: 83vh;
+    left: 47vw;
+    background:
+    url('/images/P5/12.png') top left no-repeat;
+    background-size: contain;
+}
+#illu9{
+    top: 64vh;
+    left: 64vw;
+    background:
+    url('/images/P5/13.png') top left no-repeat;
+    background-size: contain;
+}
+#illu10{
+    top: 55vh;
+    left: 77vw;
+    background:
+    url('/images/P5/14.png') top left no-repeat;
+    background-size: contain;
+}

@@ -9,7 +9,11 @@
     background-size: cover; */
 
 }
-
+#rgbaTxt{
+      position: absolute;
+      left: 50px;
+      top: 0;
+}
   #p3r1{
     position: relative;
     flex: 3;
