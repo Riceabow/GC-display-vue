@@ -1,0 +1,325 @@
+#bkdiv4{
+    position: relative;
+    background:linear-gradient(to top,rgba(246,185,79, 1) , #fdf6ec 5%);
+    z-index: -2;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.arch-bridge {  
+    position: relative;  
+    width: 100%; /* 长方形的宽度 */  
+    height: 30%; /* 长方形的高度 */  
+    background-color: #f19600; /* 长方形的背景色 */  
+    overflow: hidden; /* 隐藏超出容器的部分 */  
+  }  
+    
+  .arch-shade {  
+    content: '';  
+    position: absolute;  
+    left: 50%;  
+    top: 30%;
+    width: 90%; /* 圆弧的宽度，小于长方形的宽度以创建镂空效果 */  
+    height: 300%; 
+    background-color:#fdf6ec; /* 圆弧的背景色，这里设为白色以模拟镂空效果 */  
+    border-radius: 80% 80% 80% 80%; /* 仅顶部左右两个角设置圆角，模拟圆弧的顶部 */  
+    transform: translateX(-50%); /* 居中圆弧 */  
+  }  
+#P4head{
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    height: 20%;
+    top: 0;
+    background:
+    url('/images/P4/1.png') center center no-repeat;
+    background-size: contain;
+}
+#headTxt1{
+    position: absolute;
+    left: 4%;
+    height: 95%;
+    width: 20%;
+    background:
+    url('/images/P4/2.png') left center no-repeat;
+    background-size: contain;
+}
+#headTxt2{
+    position: absolute;
+    right: 3%;
+    height: 95%;
+    width: 20%;
+    background:
+    url('/images/P4/3.png') right center no-repeat;
+    background-size: contain;
+}
+#dial{
+    position: absolute;
+    height: 68%;
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1%;
+    background:
+    url('/images/P4/29.png') center center no-repeat;
+    background-size: contain;
+}
+#pingziInp4{
+    position: absolute;
+    height: 65%;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-53%);
+    bottom: 0;
+    background:
+    url('/images/P4/25.png') center center no-repeat;
+    background-size: contain;
+    z-index: 2;
+}
+.Spreadinfos{
+    /* height: 30%;
+    width: 30%; */
+    position: absolute;
+}
+#p4info24{
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 30%;
+    left: 50%;
+    transform: translate(-55%,-30%);
+    z-index: 2;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(246,185,79, 1) 40%, rgba(246,185,79, 0) 100%);
+    box-shadow: 0 0 40px 30px rgba(246,185,79,0.5);
+}
+/* 折色人物 */
+#p4info1{
+    height: 18%;
+    width: 25%;
+    bottom: 44%;
+    right: -3%;
+    background:
+    url('/images/P4/4.png') center center no-repeat;
+    background-size: contain;
+}
+/* 长行人物 */
+#p4info2{
+    height: 18%;
+    width: 25%;
+    bottom: 20%;
+    right: -4%;
+    background:
+    url('/images/P4/5.png') center center no-repeat;
+    background-size: contain;
+}
+/* 山水风景 */
+#p4info3{
+    height: 22%;
+    width: 25%;
+    top: -20%;
+    left: 22%;
+    background:
+    url('/images/P4/6.png') center center no-repeat;
+    background-size: contain;
+}
+/* 写实动物 */
+#p4info4{
+    height: 18%;
+    width: 20%;
+    top: -31%;
+    left: 40%;
+    background:
+    url('/images/P4/7.png') center center no-repeat;
+    background-size: contain;
+}
+/* 徽章 */
+#p4info5{
+    height: 22%;
+    width: 25%;
+    bottom: 40%;
+    left: -4%;
+    background:
+    url('/images/P4/8.png') center center no-repeat;
+    background-size: contain;
+}
+/* 缠枝 */
+#p4info6{
+    height: 25%;
+    width: 25%;
+    top: 17%;
+    right: 1%;
+    background:
+    url('/images/P4/9.png') center center no-repeat;
+    background-size: contain;
+}
+/* 折纸 */
+#p4info7{
+    height: 25%;
+    width: 25%;
+    top: -2%;
+    right: 10%;
+    background:
+    url('/images/P4/10.png') center center no-repeat;
+    background-size: contain;
+}
+/* 墨彩描金 */
+#p4info8{
+    height: 18%;
+    width: 25%;
+    bottom: -1%;
+    right: -2%;
+    background:
+    url('/images/P4/11.png') center center no-repeat;
+    background-size: contain;
+}
+/* 写意动物 */
+#p4info9{
+    height: 18%;
+    width: 20%;
+    top: -28%;
+    right: 25%;
+    background:
+    url('/images/P4/12.png') center center no-repeat;
+    background-size: contain;
+}
+/* 船舶 */
+#p4info10{
+    height: 22%;
+    width: 20%;
+    top: 6%;
+    left: 6%;
+    background:
+    url('/images/P4/13.png') center center no-repeat;
+    background-size: contain;
+}
+/* 吉祥 */
+#p4info11{
+    height: 22%;
+    width: 20%;
+    bottom: 7%;
+    left: -3%;
+    background:
+    url('/images/P4/14.png') center center no-repeat;
+    background-size: contain;
+}
+
+#p4info12{
+    height: 22%;
+    width: 22%;
+    top: 10%;
+    left: -12%;
+    background:
+    url('/images/P4/16.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info13{
+    height: 22%;
+    width: 22%;
+    bottom: 40%;
+    left: -18%;
+    background:
+    url('/images/P4/15.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info14{
+    height: 18%;
+    width: 18%;
+    top: -16%;
+    left: 8%;
+    background:
+    url('/images/P4/17.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info15{
+    height: 12%;
+    width: 14%;
+    top: -10%;
+    right: 28%;
+    background:
+    url('/images/P4/18.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info16{
+    height: 12%;
+    width: 14%;
+    top: -12%;
+    right: 43%;
+    background:
+    url('/images/P4/19.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info17{
+    height: 25%;
+    width: 25%;
+    top: -6%;
+    right: -10%;
+    background:
+    url('/images/P4/20.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info18{
+    height: 18%;
+    width: 18%;
+    top:15%;
+    right: -10%;
+    background:
+    url('/images/P4/21.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info19{
+    height: 18%;
+    width: 18%;
+    top:39%;
+    right: -15%;
+    background:
+    url('/images/P4/22.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info20{
+    height: 20%;
+    width: 20%;
+    bottom:20%;
+    right: -17%;
+    background:
+    url('/images/P4/23.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info21{
+    height: 22%;
+    width: 22%;
+    bottom:-3%;
+    right: -15%;
+    background:
+    url('/images/P4/24.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info21{
+    height: 22%;
+    width: 22%;
+    bottom:-3%;
+    right: -15%;
+    background:
+    url('/images/P4/24.png') center center no-repeat;
+    background-size: contain;
+}
+#p4info22{
+    height: 28%;
+    width: 24%;
+    bottom:3%;
+    left: -25%;
+    background:
+    url('/images/P4/30.png') center center no-repeat;
+    background-size: contain;
+}
+
+
+#p4info23{
+    height: 40%;
+    width: 15%;
+    bottom:8%;
+    left: 24%;
+    background:
+    url('/images/P4/26.png') center center no-repeat;
+    background-size: contain;
+}

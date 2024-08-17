@@ -8,14 +8,18 @@
         <div class="p3r2L" >
           <div class="p3r2 p3r2c1 p3fade" id="p3r2o1" ></div>
           <div class="p3r2 p3r2c1 p3fade" id="p3r2o2" ></div>
-          <div class="Ltxt p3fade " id="Ltxt1" ></div>
-          <div class="Ltxt p3fade" id="Ltxt2" ></div>
+
         </div>
         
         <div class="p3r2m p3fade">
           <ColorPicker v-model="colorElected" size="medium" modebar="none" style="position: absolute;;left: 0;top: 0;" />
           <p :style="txtRgba" id="rgbaTxt">{{ rgbaTxt }}</p>
-          <div class="mstuffs" id="p3m1" ref="outer"></div>
+          <div class="mstuffs" id="p3m1" ref="outer">
+            <div class="Ltxt p3fade " id="Ltxt1" ></div>
+            <div class="Ltxt p3fade" id="Ltxt2" ></div>
+            <div class="Rtxt p3fade" id="Rtxt1" ></div>
+            <div class="Rtxt p3fade" id="Rtxt2"></div>
+          </div>
           <div class="mstuffs" id="p3m2" ref="inner"></div>
           <div class="mstuffs" id="p3m3"></div>
           <div class="mstuffs" id="p3m4" ref="blurColor" :style="bkcolor"></div>
@@ -25,8 +29,7 @@
           <div class="p3r2 p3fade" id="p3r2o3" ></div>
           <div class="p3r2 p3fade" id="p3r2o4" ></div>
           <div class="p3r2 p3fade" id="p3r2o5" ></div>
-          <div class="Rtxt p3fade" id="Rtxt1" ></div>
-          <div class="Rtxt p3fade" id="Rtxt2"></div>
+
         </div>
 
       </div>
@@ -133,7 +136,7 @@ export default{
       // 同时，三个小div开始无限旋转  
       rotateDivs.forEach(div => {  
         tl.to(div, {  
-          duration: 15, // 动画持续时间，秒  
+          duration: 30, // 动画持续时间，秒  
           rotation: "360", // 旋转角度  
           ease: "none", // 缓动函数  
           repeat: -1, // 无限重复  

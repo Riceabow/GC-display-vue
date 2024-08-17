@@ -131,7 +131,7 @@ export default{
   @import '../assets/style/P5.css';
   @import '../assets/style/style.css';
   .process-section{
-    width: 100%;
+    height: 100%;
   }
   .cls-1{
     fill:none;
